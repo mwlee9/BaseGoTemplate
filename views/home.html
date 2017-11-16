@@ -1,0 +1,59 @@
+{{define "home"}} {{end}}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {{template "head" .}}
+    <link rel="stylesheet" href="/static/CSS/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Jumbo heading</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+
+            <div id="app">
+                ${ message }
+            </div>
+        </div>
+    </div>
+
+    <form action="/testform" method="post">
+        
+        <div class="container">
+        <div class="form-group">
+            <label for=""></label>
+            
+            <input type="text" class="form-control"
+                name="user" id="" aria-describedby="helpId" placeholder="">
+            
+            <br>
+            <button type="submit" class="btn btn-primary|secondary|success|danger|warning|info|light|dark|link">Submit</button>
+        </div>
+        </div>
+        
+
+        
+
+    
+    </form>
+   
+
+
+</body>
+
+{{template "foot" .}}
+
+</html>
